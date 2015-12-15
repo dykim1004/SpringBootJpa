@@ -21,8 +21,8 @@ public class IndexController {
     public String index(Model model){
         model.addAttribute("name", "Spring Boot Start");
 
-        repository.save(new Customer("Alice", "Smith"));
-        repository.save(new Customer("Bob", "Smith"));
+        //repository.save(new Customer("Alice", "Smith"));
+        //repository.save(new Customer("Bob", "Smith"));
 
         System.out.println("Customers found with findAll():");
         System.out.println("-------------------------------");
