@@ -28,6 +28,7 @@ repositories {
 
 
 dependencies {
+
     compile('org.springframework.boot:spring-boot-starter-web')
     compile("org.springframework.boot:spring-boot-starter-thymeleaf")
     compile('org.glassfish:javax.ejb:3.0.1','org.eclipse.persistence:javax.persistence:2.0.0')
