@@ -20,9 +20,13 @@ public class IndexController {
     @RequestMapping("/")
     public String index(Model model){
         model.addAttribute("name", "Spring Boot Start");
+        mongoDbTest();
+        return "index";
+    }
 
-        //repository.save(new Customer("Alice", "Smith"));
-        //repository.save(new Customer("Bob", "Smith"));
+    private void mongoDbTest(){
+        repository.save(new Customer("Alice", "Smith"));
+        repository.save(new Customer("Bob", "Smith"));
 
         System.out.println("Customers found with findAll():");
         System.out.println("-------------------------------");
@@ -30,9 +34,5 @@ public class IndexController {
             System.out.println(customer);
         }
         System.out.println();
-
-
-
-        return "index";
     }
 }
