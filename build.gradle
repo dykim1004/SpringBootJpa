@@ -16,7 +16,7 @@ apply plugin: 'idea'
 apply plugin: 'spring-boot'
 
 jar {
-    baseName = 'demo'
+    baseName = 'dykimExample'
     version = '0.0.1-SNAPSHOT'
 }
 sourceCompatibility = 1.8
@@ -32,7 +32,7 @@ configurations {
 
 dependencies {
     compile('org.springframework.boot:spring-boot-starter-batch')
-    compile('org.springframework.boot:spring-boot-starter-data-elasticsearch')
+    //compile('org.springframework.boot:spring-boot-starter-data-elasticsearch')
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('org.springframework.boot:spring-boot-starter-data-rest')
     compile('org.springframework.boot:spring-boot-starter-data-mongodb')
@@ -41,11 +41,14 @@ dependencies {
     //compile('org.springframework.boot:spring-boot-starter-security')
     compile('org.springframework.boot:spring-boot-starter-thymeleaf')
     compile('org.springframework.boot:spring-boot-starter-web')
+
+    compile 'org.webjars.bower:bootstrap:3.3.6'
+    compile 'org.webjars.bower:jquery:2.1.4'
+
     runtime('com.h2database:h2')
     providedRuntime('org.projectlombok:lombok:1.16.6')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
-
 
 eclipse {
     classpath {
