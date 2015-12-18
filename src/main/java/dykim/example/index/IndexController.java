@@ -19,7 +19,7 @@ public class IndexController {
 
     @RequestMapping("/")
     public String index(Model model){
-        model.addAttribute("name", "Spring Boot Start123");
+        model.addAttribute("name", "Spring Boot reloaded 11");
         //mongoDbTest();
         return "index";
     }

@@ -1,17 +1,39 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> </meta>
-    <link href="webjars/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" media="screen"> </link>
-    <title>Hello dykim</title>
+<head lang="en">
+
+    <title>Spring Framework Guru</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.3.6/dist/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen" />
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.4/dist/jquery.min.js}"></script>
+
+    <link href="../static/css/guru.css"
+          th:href="@{css/guru.css}" rel="stylesheet" media="screen"/>
+
+
 </head>
 <body>
-<!--/* <xmp> */-->
-<h2>Hello! <span th:text="${name}">${name}</span></h2>
-<div>Thymeleaf !!</div>
+<div class="container">
+    <div class="jumbotron">
+        <img src="../static/images/FBcover1200x628.png" width="1000"
+             th:src="@{images/FBcover1200x628.png}"/>
+        <h1>Hello</h1>
 
+        <h2>Fellow Spring Framework Gurus!!!</h2>
 
-<script src="/webjars/jquery/2.1.4/dist/jquery.min.js"></script>
-<script src="/webjars/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <div class="btn-group">
+            <button type="button" class="btn btn-success">This is a success button</button>
+            <button type="button" class="btn btn-warning">This is a warning button</button>
+            <button type="button" class="btn btn-danger">This is a danger button</button>
+        </div>
+
+    </div>
+</div>
+
 </body>
 </html>
