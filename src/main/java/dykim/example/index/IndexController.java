@@ -33,6 +33,6 @@ public class IndexController {
         for (Customer customer : repository.findAll()) {
             System.out.println(customer);
         }
-        System.out.println();
+        System.out.println("DB Test !!");
     }
 }
