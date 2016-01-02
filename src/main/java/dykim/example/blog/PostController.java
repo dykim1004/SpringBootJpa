@@ -31,14 +31,14 @@ public class PostController {
     public String list(Model model) {
         List<Post> postList = postDao.findAll();
         model.addAttribute("postList", postList);
-        return "blog";
+        return "blog/blog";
     }
 
     @RequestMapping("/{id}")
     public String view(Model model, @PathVariable int id) {
         Post post = postDao.findOne(id);
         model.addAttribute("post", post);
-        return "post";
+        return "blog/post";
     }
 
 }
