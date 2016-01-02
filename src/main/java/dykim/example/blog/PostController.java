@@ -24,7 +24,6 @@ public class PostController {
     @RequestMapping("/write")
     public String write(Post post) {
         post.setRegDate(new Date());
-        System.out.println("post :"+post.getId());
         return "redirect:/post/" + postDao.save(post).getId();
     }
 

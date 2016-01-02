@@ -22,11 +22,14 @@
 <div class="container">
     <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            <div th:if="${postList != null}">
-                <h1>Result</h1>
-                <ul>
-                    <li th:each="item : ${postList}" th:text="${item}">Item description here...</li>
-                </ul>
+
+            <div class="post-preview" th:each="post : ${postList}">
+                11111
+                <a href="/post/${post.id}">
+                    <h2 class="post-title" th:text="${post.subject}">
+                    </h2>
+                </a>
+                <p class="post-meta" th:text="${post.regDate}"></p>
             </div>
 
             <!-- Pager -->
