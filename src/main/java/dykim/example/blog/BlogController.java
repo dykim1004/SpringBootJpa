@@ -14,4 +14,9 @@ public class BlogController {
     public String blog(Model model) {
         return "blog";
     }
+
+    @RequestMapping("/helloBlog")
+    public String helloBlog(Model model){
+        return "helloBlog";
+    }
 }
