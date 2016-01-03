@@ -45,10 +45,12 @@ dependencies {
 
     compile 'org.webjars.bower:bootstrap:3.3.6'
     compile 'org.webjars.bower:jquery:2.1.4'
+    compile 'org.webjars.bower:pen:0.2.2'
+    compile 'org.webjars.bower:origoni-startbootstrap-clean-blog:1.0.3'
 
     compile('org.springframework:springloaded:1.2.4.RELEASE') //추가하여 javaagent 옵션 추가시 위치 가져옴 변경
-    runtime('com.h2database:h2')
-    providedRuntime('org.projectlombok:lombok:1.16.6')
+    compile('com.h2database:h2')
+    compile('org.projectlombok:lombok:1.16.6')
     testCompile('org.springframework.boot:spring-boot-starter-test')
 }
 
