@@ -41,8 +41,8 @@
 
             <div class="post-preview" th:each="post : ${postList}">
                 <a href="/post/${post.id}">
-                    <h2 class="post-title" th:text="${post.subject}"/>
-                    <h3 class="post-subtitle" th:text="부제목" />
+                    <h2 class="post-title" th:text="${post.title}"/>
+                    <h3 class="post-subtitle" th:text="${post.subtitle}" />
                 </a>
                 <p class="post-meta" th:text="${post.regDate}"></p>
             </div>

@@ -1,11 +1,9 @@
 package dykim.example.config;
 
-import org.springframework.context.annotation.Configuration;
-import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter;
 
-@Configuration
-public class SecurityConfig extends WebSecurityConfigurerAdapter {
+//@Configuration
+public class SecurityConfig //extends WebSecurityConfigurerAdapter
+{
 	
 	// 01. 인메모리 로그인
 	/*@Override
@@ -13,15 +11,15 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 		auth.inMemoryAuthentication().withUser("admin").password("1234").roles("ADMIN");
 	}*/
 	
-	@Override
+	/*@Override
 	protected void configure(HttpSecurity httpSecurity) throws Exception {
 		//일단 허용
 		httpSecurity.authorizeRequests().antMatchers("/").permitAll();
 		// static resources
 		//httpSecurity.authorizeRequests()
-		//.antMatchers("/css/**", "/js/**", "/images/**", "/resources/**", "/webjars/**").permitAll();
+		//.antMatchers("/css*//**", "/js*//**", "/images*//**", "/resources*//**", "/webjars*//**").permitAll();
 		
-		/*httpSecurity.authorizeRequests()
+		*//*httpSecurity.authorizeRequests()
 						.antMatchers("/signin").anonymous()
 						.anyRequest().authenticated()
 						.and()
@@ -37,8 +35,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
 						.logoutSuccessUrl("/signin?logout");
 		
 		httpSecurity.exceptionHandling().accessDeniedPage("/admin/dashboard.html");
-		httpSecurity.sessionManagement().invalidSessionUrl("/signin");*/
+		httpSecurity.sessionManagement().invalidSessionUrl("/signin");*//*
 		
-	}
+	}*/
 	
 }
