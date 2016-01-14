@@ -16,3 +16,6 @@ eclipse : Run As → Run Configurations… → Java Application → <project_nam
 
 # thymeleaf Reload
 application.properties -> spring.thymeleaf.cache=false
+
+# spring xml 기반 ecache 설정 참고 사이트
+https://donghwi-kim.github.io/jekyll/update/2015/04/05/ehcache.html
